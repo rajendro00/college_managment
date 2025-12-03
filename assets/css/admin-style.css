@@ -1,0 +1,38 @@
+.cms-matabox-container{
+    padding: 10px 0;
+}
+
+.cms-form-row{
+    margin-bottom: 15px;
+}
+
+.cms-form-row label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cms-form-row input[type="text"],
+.cms-form-row input[type="email"],
+.cms-form-row input[type="date"],
+.cms-form-row input[type="number"],
+.cms-form-row select,
+.cms-form-row textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+.cms-form-row .description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+
+#cms_student_contact .cms-form-row {
+    margin-bottom: 12px;
+}
+
+#cms_student_contact textarea {
+    max-width: 100%;
+}
