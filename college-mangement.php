@@ -24,10 +24,11 @@ include_once CMS_PLUGIN_DIR . 'includes/cpt-students.php';
 
 register_activation_hook(__FILE__, 'cms_flush_rewrites');
 
-function cms_admin_styles($hook){
+function cms_admin_styles(){
 
+    $screen = get_current_screen();
     
-    if(strpos($hook, 'college-management') !==false || $hook == 'edit.php' || $hook == 'post.php' || $hook == 'post-new.php'){
+    if($screen->id == 'student'){
         wp_enqueue_style('cms-admin-style', CMS_PLUGIN_URL.'assets/css/admin-style.css', [], CMS_VERSION);
     }
     
